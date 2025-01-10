@@ -1,9 +1,11 @@
 # Next.js 15 Assistant
 
+The latest and most reliable Next.js snippets for VS Code
+
 ## Layout Snippets
 
 ```tsx
-// nclr - Root Layout
+// nrl - Root Layout //
 
 export default function RootLayout({
   children,
@@ -19,7 +21,7 @@ export default function RootLayout({
 ```
 
 ```tsx
-// ncl - Layout
+// nl - Layout //
 
 export default async function Layout({
   children,
@@ -31,7 +33,7 @@ export default async function Layout({
 ```
 
 ```tsx
-// nclp - Layout with params
+// nlwp - Layout with params //
 
 export default async function Layout({
   children,
@@ -45,4 +47,12 @@ export default async function Layout({
 
   return <>{children}</>
 }
+```
+
+## Route Handler Snippets
+
+```ts
+// nrhg - HTTP GET //
+
+export async function GET(request: Request) {}
 ```
