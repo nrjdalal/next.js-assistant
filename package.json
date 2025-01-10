@@ -1,7 +1,7 @@
 {
   "name": "nextjs-assistant",
-  "displayName": "Next.js Assistant (Beta)",
-  "description": "The latest and most reliable Next.js snippets for VS Code",
+  "displayName": "Next.js Assistant",
+  "description": "Releasing Soon! The latest and most reliable Next.js snippets for VS Code.",
   "publisher": "nrjdalal",
   "icon": "dist/icon.png",
   "version": "0.5.0",
