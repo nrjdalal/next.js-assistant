@@ -1,11 +1,14 @@
 .gitignore
 .prettierrc
+bun.lockb
 CHANGELOG.md
 
 *.js
 *.tsx
 *.vsix
 
+.changeset/
+.github/
 .vscode/
 assets/
 node_modules/
