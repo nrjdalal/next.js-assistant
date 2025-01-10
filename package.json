@@ -8,8 +8,8 @@
     "vscode": "^1.4.9"
   },
   "scripts": {
-    "generate": "rm -rf ./dist/ && bun src/scripts/generate.js && cp ./src/images/* ./dist/ && bunx prettier --write ./dist/*.code-snippets",
-    "publish": "bun run generate && vsce publish"
+    "generate": "rm -rf ./dist/ && bun generate.js && cp ./assets/* ./dist/ && bunx prettier --write ./dist/*.code-snippets",
+    "publish": "bun run generate && vsce publish minor"
   },
   "categories": [
     "Snippets"
@@ -17,10 +17,6 @@
   "keywords": [],
   "contributes": {
     "snippets": [
-      {
-        "language": "javascriptreact",
-        "path": "./dist/nrjdalal.code-snippets"
-      },
       {
         "language": "typescriptreact",
         "path": "./dist/nrjdalal.code-snippets"

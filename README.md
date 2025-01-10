@@ -2,13 +2,13 @@
 
 ## Layout Snippets
 
-- nclr - Root Layout
+```tsx
+// nclr - Root Layout
 
-```jsx
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode,
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
@@ -18,21 +18,21 @@ export default function RootLayout({
 }
 ```
 
-- ncl - Layout
+```tsx
+// ncl - Layout
 
-```jsx
 export default async function Layout({
   children,
 }: {
-  children: React.ReactNode,
+  children: React.ReactNode
 }) {
   return <>{children}</>
 }
 ```
 
-- nclwp - Layout with Params
+```tsx
+// nclp - Layout with params
 
-```jsx
 export default async function Layout({
   children,
   params,
@@ -43,8 +43,6 @@ export default async function Layout({
   const { slug } = await params
   console.log(slug)
 
-  return (
-    <>{children}</>
-  )
+  return <>{children}</>
 }
 ```
