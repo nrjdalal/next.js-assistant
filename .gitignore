@@ -1,5 +1,7 @@
-dist/
-node_modules/
-
 *.tsx
 *.vsix
+bun.lockb
+package-lock.json
+
+dist/
+node_modules/
