@@ -50,4 +50,4 @@ jobs:
           publish: bun run publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.VSCE_TOKEN }}
+          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
