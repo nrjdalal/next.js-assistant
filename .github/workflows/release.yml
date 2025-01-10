@@ -39,7 +39,7 @@ jobs:
       - id: changesets
         name: Create a release pull request or publish to VS Code Marketplace
         if: steps.CHECK_TOKENS.outputs.NOT_FOUND != 'true'
-        uses: changesets/action@v1.4.9
+        uses: changesets/action@v1
         with:
           title: "chore(release): version packages"
           commit: "chore(release): version packages"
