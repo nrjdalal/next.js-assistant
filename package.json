@@ -14,7 +14,7 @@
   "scripts": {
     "generate": "rm -rf ./dist/ && bun generate.js && cp ./assets/* ./dist/ && bunx prettier --write ./dist/*.code-snippets",
     "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then simple-git-hooks; fi",
-    "publish": "bun run generate && vsce publish"
+    "publish": "bun run generate && vsce publish minor"
   },
   "simple-git-hooks": {
     "commit-msg": "npx commitlint --edit $1"
