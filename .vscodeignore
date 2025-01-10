@@ -1,11 +1,10 @@
 .gitignore
 .prettierrc
-bun.lockb
-CHANGELOG.md
-
 *.js
 *.tsx
 *.vsix
+bun.lockb
+CHANGELOG.md
 
 .changeset/
 .github/
