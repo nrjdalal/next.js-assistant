@@ -1,0 +1,7 @@
+.gitignore
+.prettierrc
+
+.vscode/**
+.vscode-test/**
+node_modules/**
+src/**

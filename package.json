@@ -1,0 +1,37 @@
+{
+  "name": "nextjs-assistant",
+  "displayName": "Next.js Assistant",
+  "publisher": "nrjdalal",
+  "icon": "dist/icon.png",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.4.9"
+  },
+  "scripts": {
+    "generate": "rm -rf ./dist/ && bun src/scripts/generate.js && cp ./src/images/* ./dist/ && bunx prettier --write ./dist/*.code-snippets",
+    "publish": "bun run generate && vsce publish"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./dist/nrjdalal.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./dist/nrjdalal.code-snippets"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nrjdalal/nextjs-assistant"
+  },
+  "bugs": {
+    "url": "https://github.com/nrjdalal/nextjs-assistant/issues"
+  }
+}
