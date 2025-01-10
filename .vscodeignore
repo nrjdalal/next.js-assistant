@@ -1,7 +1,11 @@
 .gitignore
 .prettierrc
+CHANGELOG.md
 
-.vscode/**
-.vscode-test/**
-node_modules/**
-src/**
+*.js
+*.tsx
+*.vsix
+
+.vscode/
+assets/
+node_modules/
