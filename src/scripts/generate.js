@@ -1,49 +1,57 @@
-#!/usr/bin/env bun
+const fs = require("fs")
+const path = require("path")
 
-import fs from "fs"
+const readmePath = path.join(__dirname, "../../README.md")
+const outputPath = path.join(__dirname, "../../dist/readme.code-snippets")
 
-const files = fs.readdirSync("src/snippets")
+// Ensure the dist directory exists
+fs.mkdirSync(path.dirname(outputPath), { recursive: true })
 
-const PackageSnippets = {}
+fs.readFile(readmePath, "utf8", (err, data) => {
+  if (err) {
+    console.error("Error reading README.md:", err)
+    return
+  }
 
-for (const file of files) {
-  const name = file.split(".")[0]
-  const fileContent = fs.readFileSync(`src/snippets/${file}`, "utf8")
+  const snippets = {}
+  const lines = data.split("\n")
+  let currentPrefix = ""
+  let currentBody = []
+  let currentKey = ""
 
-  let modifyContent = fileContent.split("---").map((s) =>
-    s
-      .trim()
-      .split(" -\n\n```jsx\n")
-      .map((s) => [s.split("\n")])
-      .flat()
-  )
-
-  modifyContent = modifyContent.map((arr) => {
-    const type = arr[0][0]
-
-    const snippet = `${name.replace("-", " ")} ${type}`
-      .split(" ")
-      .map((s) => s[0].toUpperCase() + s.slice(1))
-      .join(" ")
-      .replace(",", " ")
-
-    return (PackageSnippets[snippet] = {
-      prefix: type,
-      body: [arr[1].slice(0, -1)].flat(),
-      description: `https://nrjdalal.com/nextjs-15-assistant`,
-    })
+  lines.forEach((line) => {
+    if (line.startsWith("### ")) {
+      // Save the previous snippet
+      if (currentKey) {
+        snippets[currentKey] = {
+          prefix: currentPrefix,
+          body: currentBody,
+        }
+      }
+      // Start a new snippet
+      const parts = line.split(" ")
+      currentPrefix = parts[1]
+      currentKey = parts[2]
+      currentBody = []
+    } else if (line.trim()) {
+      // Add non-empty lines to the current body
+      currentBody.push(line)
+    }
   })
-}
 
-const SnippetsJson = Object.fromEntries(
-  Object.entries(PackageSnippets)
-    .sort()
-    .filter(([key, value]) => value.body[0] !== "")
-)
+  // Save the last snippet
+  if (currentKey) {
+    snippets[currentKey] = {
+      prefix: currentPrefix,
+      body: currentBody,
+    }
+  }
 
-fs.mkdirSync("dist", { recursive: true })
-
-fs.writeFileSync(
-  "dist/nrjdalal.code-snippets",
-  JSON.stringify(SnippetsJson, null, 2)
-)
+  fs.writeFile(outputPath, JSON.stringify(snippets, null, 2), (err) => {
+    if (err) {
+      console.error("Error writing to readme.code-snippets:", err)
+    } else {
+      console.log("Snippets successfully written to readme.code-snippets")
+    }
+  })
+})
