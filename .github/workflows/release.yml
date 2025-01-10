@@ -28,9 +28,6 @@ jobs:
       - name: Install Dependencies
         run: bun install --no-save
 
-      - name: Build
-        run: bun run generate
-
       - id: CHECK_TOKENS
         name: Check if TOKENS are configured
         run: |
