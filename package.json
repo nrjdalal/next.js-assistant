@@ -3,7 +3,7 @@
   "displayName": "Next.js Assistant",
   "publisher": "nrjdalal",
   "icon": "dist/icon.png",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.4.9"
   },
