@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.10.1
+
+### Patch Changes
+
+- e44e00a: updated .ignores
+
 ## 0.10.0
 
 ### Minor Changes
