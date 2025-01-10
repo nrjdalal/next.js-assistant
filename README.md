@@ -1,4 +1,4 @@
-# Next.js 15 Assistant
+# Next.js Assistant
 
 Releasing Soon! The latest and most reliable Next.js snippets for VS Code.
 

@@ -1,21 +1,40 @@
 {
   "name": "nextjs-assistant",
-  "displayName": "Next.js Assistant",
-  "description": "Releasing Soon! The latest and most reliable Next.js snippets for VS Code.",
+  "version": "0.6.0",
   "publisher": "nrjdalal",
   "icon": "dist/icon.png",
-  "version": "0.6.0",
-  "engines": {
-    "vscode": "^1.4.9"
+  "displayName": "Next.js Assistant",
+  "description": "Releasing Soon! The latest and most reliable Next.js snippets for VS Code.",
+  "license": "MIT",
+  "author": {
+    "name": "Neeraj Dalal",
+    "url": "https://nrjdalal.com",
+    "email": "admin@nrjdalal.com"
   },
   "scripts": {
     "generate": "rm -rf ./dist/ && bun generate.js && cp ./assets/* ./dist/ && bunx prettier --write ./dist/*.code-snippets",
+    "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then simple-git-hooks; fi",
     "publish": "bun run generate && vsce publish minor"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "npx commitlint --edit $1"
+  },
+  "repository": "nrjdalal/next.js-assistant",
+  "homepage": "https://github.com/nrjdalal/next.js-assistant#readme",
+  "bugs": "https://github.com/nrjdalal/next.js-assistant/issues",
+  "keywords": [],
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "prettier": "^3.4.2",
+    "simple-git-hooks": "^2.11.1"
+  },
+  "engines": {
+    "vscode": "^1.4.9"
   },
   "categories": [
     "Snippets"
   ],
-  "keywords": [],
   "contributes": {
     "snippets": [
       {
@@ -27,12 +46,5 @@
         "path": "./dist/tsx.code-snippets"
       }
     ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nrjdalal/next.js-assistant"
-  },
-  "bugs": {
-    "url": "https://github.com/nrjdalal/next.js-assistant/issues"
   }
 }
