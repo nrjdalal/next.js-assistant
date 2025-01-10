@@ -2,7 +2,7 @@
 
 ## Layout Snippets
 
-> nclr - Root Layout
+- nclr - Root Layout
 
 ```jsx
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
 }
 ```
 
-> ncl - Layout
+- ncl - Layout
 
 ```jsx
 export default async function Layout({
@@ -30,7 +30,7 @@ export default async function Layout({
 }
 ```
 
-> nclwp - Layout with Params
+- nclwp - Layout with Params
 
 ```jsx
 export default async function Layout({
