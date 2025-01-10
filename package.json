@@ -19,15 +19,15 @@
     "snippets": [
       {
         "language": "typescriptreact",
-        "path": "./dist/nrjdalal.code-snippets"
+        "path": "./dist/readme.code-snippets"
       }
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nrjdalal/nextjs-assistant"
+    "url": "https://github.com/nrjdalal/next.js-assistant"
   },
   "bugs": {
-    "url": "https://github.com/nrjdalal/nextjs-assistant/issues"
+    "url": "https://github.com/nrjdalal/next.js-assistant/issues"
   }
 }
