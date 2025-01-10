@@ -4,7 +4,7 @@
   "description": "The latest and most reliable Next.js snippets for VS Code",
   "publisher": "nrjdalal",
   "icon": "dist/icon.png",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "engines": {
     "vscode": "^1.4.9"
   },
