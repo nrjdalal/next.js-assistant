@@ -39,9 +39,8 @@ jobs:
       - id: CHECK_TOKENS_AND_PUBLISH
         name: Check if TOKENS are configured and version status
         run: |
-          OUTPUT=$(bunx changeset version)
-          if [ -z "${{ secrets.GITHUB_TOKEN }}" ] || [ -z "${{ secrets.NPM_TOKEN }}" ] || [ -z "${{ secrets.VSCE_TOKEN }}" ] || echo "$OUTPUT" | grep -q "exiting"; then
-            echo "TOKENS are not configured or command output contains 'exiting'. Skipping changeset actions."
+          if [ -z "${{ secrets.GITHUB_TOKEN }}" ] || [ -z "${{ secrets.NPM_TOKEN }}" ] || [ -z "${{ secrets.VSCE_TOKEN }}" ] || (vsce publish || echo "true") | grep -i "true"; then
+            echo "TOKENS are not configured or version already deployed. Skipping changeset actions."
             echo "NOT_FOUND=true" >> $GITHUB_OUTPUT
           fi
 
