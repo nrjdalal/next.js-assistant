@@ -28,11 +28,20 @@ jobs:
       - name: Install Dependencies
         run: bun install --no-save
 
-      - id: CHECK_TOKENS
-        name: Check if TOKENS are configured
+      # - id: CHECK_TOKENS
+      #   name: Check if TOKENS are configured
+      #   run: |
+      #     if [ -z "${{ secrets.GITHUB_TOKEN }}" ] || -z "${{ secrets.NPM_TOKEN }}" || [ -z "${{ secrets.VSCE_TOKEN }}"  ]; then
+      #       echo "TOKENS are not configured. Skipping changeset actions."
+      #       echo "NOT_FOUND=true" >> $GITHUB_OUTPUT
+      #     fi
+
+      - id: CHECK_TOKENS_AND_PUBLISH
+        name: Check if TOKENS are configured and version status
         run: |
-          if [ -z "${{ secrets.GITHUB_TOKEN }}" ] || -z "${{ secrets.NPM_TOKEN }}" || [ -z "${{ secrets.VSCE_TOKEN }}"  ]; then
-            echo "TOKENS are not configured. Skipping changeset actions."
+          OUTPUT=$(bunx changeset version)
+          if [ -z "${{ secrets.GITHUB_TOKEN }}" ] || [ -z "${{ secrets.NPM_TOKEN }}" ] || [ -z "${{ secrets.VSCE_TOKEN }}" ] || echo "$OUTPUT" | grep -q "exiting"; then
+            echo "TOKENS are not configured or command output contains 'exiting'. Skipping changeset actions."
             echo "NOT_FOUND=true" >> $GITHUB_OUTPUT
           fi
 
