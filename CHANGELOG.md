@@ -1,5 +1,13 @@
 # Change Log
 
+## 0.11.2
+
+### Patch Changes
+
+- [`a76fd11`](https://github.com/nrjdalal/next.js-assistant/commit/a76fd11b4292914124bc642c26d53714955c17eb) Thanks [@nrjdalal](https://github.com/nrjdalal)! - cracking patching
+
+- [`ef8222a`](https://github.com/nrjdalal/next.js-assistant/commit/ef8222a0551f3ed5be0fdff393d2e73939e9fa38) Thanks [@nrjdalal](https://github.com/nrjdalal)! - updated docs
+
 ## 0.11.0
 
 ### Minor Changes
