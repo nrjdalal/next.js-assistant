@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.14.1
+
+### Patch Changes
+
+- [`f650542`](https://github.com/nrjdalal/next.js-assistant/commit/f650542c6188ae0a1bea2437aac738d08d87bd0d) Thanks [@nrjdalal](https://github.com/nrjdalal)! - updated package.json and readme.md
+
 ## 0.14.0
 
 ### Minor Changes
