@@ -14,7 +14,7 @@
   "scripts": {
     "generate": "rm -rf ./dist/ && bun generate.js && cp ./assets/* ./dist/ && bunx prettier --write ./dist/*.code-snippets",
     "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then simple-git-hooks; fi",
-    "publish": "bun run generate && changeset publish && (vsce publish || true)",
+    "publish": "bun run generate && changeset publish && vsce publish",
     "release": "changeset"
   },
   "simple-git-hooks": {
