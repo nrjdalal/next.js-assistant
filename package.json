@@ -4,7 +4,7 @@
   "publisher": "nrjdalal",
   "icon": "dist/icon.png",
   "displayName": "Next.js Assistant",
-  "description": "Releasing Soon! The latest and most reliable Next.js snippets for VS Code.",
+  "description": "The Next.js Assistant, your ultimate resource for Next.js development.",
   "license": "MIT",
   "author": {
     "name": "Neeraj Dalal",
@@ -23,7 +23,21 @@
   "repository": "nrjdalal/next.js-assistant",
   "homepage": "https://github.com/nrjdalal/next.js-assistant#readme",
   "bugs": "https://github.com/nrjdalal/next.js-assistant/issues",
-  "keywords": [],
+  "keywords": [
+    "next.js 15",
+    "next.js assistant",
+    "next.js snippets",
+    "next.js",
+    "nextjs 14",
+    "nextjs 15",
+    "nextjs assistant",
+    "nextjs snippets",
+    "nextjs",
+    "snippets",
+    "snippets for next.js",
+    "snippets for nextjs",
+    "react snippets"
+  ],
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.11",
