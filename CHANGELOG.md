@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.11.0
+
+### Minor Changes
+
+- 47200b9: workflow fix
+
 ## 0.10.1
 
 ### Patch Changes

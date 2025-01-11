@@ -1,6 +1,6 @@
 {
   "name": "nextjs-assistant",
-  "version": "0.10.1",
+  "version": "0.11.0",
   "publisher": "nrjdalal",
   "icon": "dist/icon.png",
   "displayName": "Next.js Assistant",
