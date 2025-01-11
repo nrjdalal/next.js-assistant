@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.14.0
+
+### Minor Changes
+
+- [`8775a3b`](https://github.com/nrjdalal/next.js-assistant/commit/8775a3b9262d427b912cfd81eb88a58669432c34) Thanks [@nrjdalal](https://github.com/nrjdalal)! - page 100% done
+
 ## 0.13.0
 
 ### Minor Changes
