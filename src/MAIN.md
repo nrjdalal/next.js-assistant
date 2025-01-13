@@ -29,48 +29,19 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 
 ## Table of Contents
 
-- [Links](#links)
-- [Introduction](#introduction)
-- [Contributing](#contributing)
-- [Getting Started](#getting-started)
-- [Roadmap Core](#roadmap-core)
-- [Roadmap Extended](#roadmap-extended)
-- [Table of Contents](#table-of-contents)
-- [Snippets](#snippets)
-  - [Directives Snippets](#directives)
-    - [Use Cache](#use-cache)
-    - [Use Client](#use-client)
-    - [Use Server](#use-server)
-  - [Components Snippets](#components)
-    - [Link](#link)
-    - [Image](#image)
-    - [Script](#script)
-  - [Page Snippets](#page-snippets)
-    - [Page](#page)
-    - [Page with Params](#page-with-params)
-    - [Page with Search Params](#page-with-search-params)
-    - [Page with Client Params](#page-with-client-params)
-    - [Page with Client Search Params](#page-with-client-search-params)
-  - [Route Handlers Snippets](#route-handlers-snippets)
-    - [HTTP Methods](#http-methods)
-    - [HTTP Methods with Cookies](#http-methods-with-cookies)
-    - [HTTP Methods with Headers](#http-methods-with-headers)
-
-## Roadmap Core
-
-- [x] Directives
-  - [x] use cache
-  - [x] use client
-  - [x] use server
-- [ ] Components
-  - [ ] Font
-  - [ ] Form
-  - [x] Image
-  - [x] Link
-  - [x] Script
+- [x] [Directives](#directives)
+  - [x] [use cache](#use-cache)
+  - [x] [use client](#use-client)
+  - [x] [use server](#use-server)
+- [x] [Components](#components)
+  - [ ] Font (Future)
+  - [ ] Form (Future)
+  - [x] [Image](#image)
+  - [x] [Link](#link)
+  - [x] [Script](#script)
 - [ ] File Conventions
-  - [ ] default.js
-  - [ ] error.js
+  - [ ] default.js (Future)
+  - [x] [error.js](#error)
   - [ ] forbidden.js
   - [ ] instrumentation.js
   - [ ] layout.js
@@ -90,7 +61,7 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
   - [ ] TypeScript
   - [ ] ESLint
 
-## Roadmap Extended
+## Roadmap Extras
 
 - [ ] Drizzle
 - [ ] Prettier
@@ -99,11 +70,9 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 - [ ] Tanstack Query
 - [ ] Zod
 
-## Snippets
+### [Directives](https://nextjs.org/docs/app/api-reference/directives)
 
-### [Directives Snippets](https://nextjs.org/docs/app/api-reference/directives)
-
-#### Use Cache
+#### [use cache](https://nextjs.org/docs/app/api-reference/directives/use-cache)
 
 ```tsx
 // use-cache - 🔥 use cache 🔥 //
@@ -111,7 +80,7 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 "use cache"
 ```
 
-#### Use Client
+#### [use client](https://nextjs.org/docs/app/api-reference/directives/use-client)
 
 ```tsx
 // use-client - 🔥 use client 🔥 //
@@ -119,7 +88,7 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 "use client"
 ```
 
-#### Use Server
+#### [use server](https://nextjs.org/docs/app/api-reference/directives/use-server)
 
 ```tsx
 // use-server - 🔥 use server 🔥 //
@@ -127,9 +96,27 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 "use server"
 ```
 
-### [Components Snippets](https://nextjs.org/docs/app/api-reference/components)
+### [Components](https://nextjs.org/docs/app/api-reference/components)
 
-#### Link
+#### [Image](https://nextjs.org/docs/app/api-reference/components/image)
+
+- #### Image Import
+
+```tsx
+// import-image - 🔥 Image Import 🔥 //
+
+import Image from "next/image"
+```
+
+- #### Image Component
+
+```tsx
+// image - 🔥 Image 🔥 //
+
+<Image src="/nrjdalal.png" width={500} height={500} alt="Author Photo" />
+```
+
+#### [Link](https://nextjs.org/docs/app/api-reference/components/link)
 
 - #### Link Import
 
@@ -150,32 +137,14 @@ import Link from "next/link"
 - #### Link Component with Target Blank
 
 ```tsx
-// link-target-blank - 🔥 Link with Target Blank 🔥 //
+// link-with-target-blank - 🔥 Link with Target Blank 🔥 //
 
 <Link href="___/___" target="_blank">
   __Home__
 </Link>
 ```
 
-#### Image
-
-- #### Image Import
-
-```tsx
-// import-image - 🔥 Image Import 🔥 //
-
-import Image from "next/image"
-```
-
-- #### Image Component
-
-```tsx
-// image - 🔥 Image 🔥 //
-
-<Image src="/nrjdalal.png" width={500} height={500} alt="Author Photo" />
-```
-
-#### Script
+#### [Script](https://nextjs.org/docs/app/api-reference/components/script)
 
 - #### Script Import
 
@@ -191,6 +160,53 @@ import Script from "next/script"
 // script - 🔥 Script 🔥 //
 
 <Script src="https://example.com/script.js" />
+```
+
+### [File Conventions](https://nextjs.org/docs/app/api-reference/file-conventions)
+
+#### [Error](https://nextjs.org/docs/app/api-reference/file-conventions/error)
+
+```tsx
+// export-error - 🔥 Error 🔥 //
+
+"use client"
+
+import { useEffect } from "react"
+
+export default function Error({
+  error,
+  reset,
+}: {
+  error: Error & { digest?: string }
+  reset: () => void
+}) {
+  useEffect(() => {
+    // Log the error to an error reporting service
+    console.error(error)
+  }, [error])
+
+  return (
+    <div
+      style={{
+        minHeight: "100dvh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <h2>Something went wrong!</h2>
+      <button
+        onClick={
+          // Attempt to recover by trying to re-render the segment
+          () => reset()
+        }
+      >
+        Try again
+      </button>
+    </div>
+  )
+}
 ```
 
 ### [Page Snippets](https://nextjs.org/docs/app/api-reference/file-conventions/page)

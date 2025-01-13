@@ -1,4 +1,5 @@
 .gitignore
+.lintstagedrc
 .prettierrc
 *.js
 *.tsx
@@ -11,3 +12,4 @@ CHANGELOG.md
 .vscode/
 assets/
 node_modules/
+src/
