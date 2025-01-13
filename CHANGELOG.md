@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.23.1
+
+### Patch Changes
+
+- [`a348486`](https://github.com/nrjdalal/next.js-assistant/commit/a348486b69c2dd2901d04e5ea68d6fedab46197e) Thanks [@nrjdalal](https://github.com/nrjdalal)! - typo correction
+
 ## 0.23.0
 
 ### Minor Changes
