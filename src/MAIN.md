@@ -10,7 +10,7 @@ Build for Production. Designed for Developers.
 
 ## Links
 
-- https://github.com/nrjdalal/nextjs-assistant
+- https://github.com/nrjdalal/next.js-assistant
 - https://marketplace.visualstudio.com/items?itemName=nrjdalal.nextjs-assistant
 
 ## Introduction
