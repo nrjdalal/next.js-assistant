@@ -158,7 +158,7 @@ The following HTTP methods are supported: GET, POST, PUT, PATCH, DELETE, HEAD, a
 
 #### GET Request
 
-```tsx
+```ts
 // nrh-get - 🔥 GET Request 🔥 //
 
 export async function GET(request: Request) {
@@ -181,7 +181,7 @@ export async function GET(request: Request) {
 
 #### POST Request
 
-```tsx
+```ts
 // nrh-post - 🔥 POST Request 🔥 //
 
 export async function POST(request: Request) {
@@ -204,7 +204,7 @@ export async function POST(request: Request) {
 
 #### PUT Request
 
-```tsx
+```ts
 // nrh-put - 🔥 PUT Request 🔥 //
 
 export async function PUT(request: Request) {
@@ -227,7 +227,7 @@ export async function PUT(request: Request) {
 
 #### PATCH Request
 
-```tsx
+```ts
 // nrh-patch - 🔥 PATCH Request 🔥 //
 
 export async function PATCH(request: Request) {
@@ -250,7 +250,7 @@ export async function PATCH(request: Request) {
 
 #### DELETE Request
 
-```tsx
+```ts
 // nrh-delete - 🔥 DELETE Request 🔥 //
 
 export async function DELETE(request: Request) {
@@ -275,7 +275,7 @@ export async function DELETE(request: Request) {
 
 #### GET Request with Cookies
 
-```tsx
+```ts
 // nrh-get-with-cookies - 🔥 GET Request with Cookies 🔥 //
 
 import { cookies } from "next/headers"
@@ -300,7 +300,7 @@ export async function GET(request: Request) {
 
 #### POST Request with Cookies
 
-```tsx
+```ts
 // nrh-post-with-cookies - 🔥 POST Request with Cookies 🔥 //
 
 import { cookies } from "next/headers"
@@ -325,7 +325,7 @@ export async function POST(request: Request) {
 
 #### PUT Request with Cookies
 
-```tsx
+```ts
 // nrh-put-with-cookies - 🔥 PUT Request with Cookies 🔥 //
 
 import { cookies } from "next/headers"
@@ -350,7 +350,7 @@ export async function PUT(request: Request) {
 
 #### PATCH Request with Cookies
 
-```tsx
+```ts
 // nrh-patch-with-cookies - 🔥 PATCH Request with Cookies 🔥 //
 
 import { cookies } from "next/headers"
@@ -375,7 +375,7 @@ export async function PATCH(request: Request) {
 
 #### DELETE Request with Cookies
 
-```tsx
+```ts
 // nrh-delete-with-cookies - 🔥 DELETE Request with Cookies 🔥 //
 
 import { cookies } from "next/headers"
@@ -402,7 +402,7 @@ export async function DELETE(request: Request) {
 
 #### GET Request with Headers
 
-```tsx
+```ts
 // nrh-get-with-headers - 🔥 GET Request with Headers 🔥 //
 
 import { headers } from "next/headers"
@@ -427,7 +427,7 @@ export async function GET(request: Request) {
 
 #### POST Request with Headers
 
-```tsx
+```ts
 // nrh-post-with-headers - 🔥 POST Request with Headers 🔥 //
 
 import { headers } from "next/headers"
@@ -452,7 +452,7 @@ export async function POST(request: Request) {
 
 #### PUT Request with Headers
 
-```tsx
+```ts
 // nrh-put-with-headers - 🔥 PUT Request with Headers 🔥 //
 
 import { headers } from "next/headers"
@@ -477,7 +477,7 @@ export async function PUT(request: Request) {
 
 #### PATCH Request with Headers
 
-```tsx
+```ts
 // nrh-patch-with-headers - 🔥 PATCH Request with Headers 🔥 //
 
 import { headers } from "next/headers"
@@ -502,7 +502,7 @@ export async function PATCH(request: Request) {
 
 #### DELETE Request with Headers
 
-```tsx
+```ts
 // nrh-delete-with-headers - 🔥 DELETE Request with Headers 🔥 //
 
 import { headers } from "next/headers"
