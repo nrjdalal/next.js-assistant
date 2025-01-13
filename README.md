@@ -8,13 +8,6 @@ Build for Production. Designed for Developers.
 
 > Project just started. Will take some time to get it to a good place. Please be patient.
 
-## What's New?
-
-- [x] Directives
-- [x] Components
-- [x] Page Snippets
-- [x] (Latest)Route Handlers Snippets with Error Handling
-
 ## Links
 
 - https://github.com/nrjdalal/nextjs-assistant
@@ -28,7 +21,7 @@ Welcome to the Next.js Assistant, your ultimate resource for Next.js development
 
 > This is a contribution first project. Therefore I made it as easy as possible to contribute.
 
-We welcome contributions from everyone. Adding snippets to this project is straightforward—just edit the `README.md` file. There is no `/src` or `/dist` or any code to worry about. Simply add amazing snippets to the relevant section and submit a pull request.
+We welcome contributions from everyone. Adding snippets to this project is straightforward—just edit the `MAIN.md` file. Simply add amazing snippets to the relevant section and submit a pull request.
 
 ## Getting Started
 
@@ -36,11 +29,12 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 
 ## Table of Contents
 
-- [What's New?](#whats-new)
 - [Links](#links)
 - [Introduction](#introduction)
 - [Contributing](#contributing)
 - [Getting Started](#getting-started)
+- [Roadmap Core](#roadmap-core)
+- [Roadmap Extended](#roadmap-extended)
 - [Table of Contents](#table-of-contents)
 - [Snippets](#snippets)
   - [Directives Snippets](#directives)
@@ -58,10 +52,53 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
     - [Page with Search Params](#page-with-search-params)
     - [Page with Client Params](#page-with-client-params)
     - [Page with Client Search Params](#page-with-client-search-params)
-  - [Route Handlers](#route-handlers)
+  - [Route Handlers Snippets](#route-handlers-snippets)
     - [HTTP Methods](#http-methods)
     - [HTTP Methods with Cookies](#http-methods-with-cookies)
     - [HTTP Methods with Headers](#http-methods-with-headers)
+
+## Roadmap Core
+
+- [x] Directives
+  - [x] use cache
+  - [x] use client
+  - [x] use server
+- [ ] Components
+  - [ ] Font
+  - [ ] Form
+  - [ ] Image
+  - [x] Link
+  - [ ] Script
+- [ ] File Conventions
+  - [ ] default.js
+  - [ ] error.js
+  - [ ] forbidden.js
+  - [ ] instrumentation.js
+  - [ ] layout.js
+  - [ ] loading.js
+  - [ ] mdx-components.js
+  - [ ] middleware.js
+  - [ ] not-found.js
+  - [ ] page.js
+  - [ ] route.js
+  - [ ] Route Segment Config
+  - [ ] template.js
+  - [ ] unauthorized.js
+  - [ ] Metadata Files
+- [ ] Functions (0/36)
+- [ ] Configuration
+  - [ ] next.config.js
+  - [ ] TypeScript
+  - [ ] ESLint
+
+## Roadmap Extended
+
+- [ ] Drizzle
+- [ ] Prettier
+- [ ] React Hook Form
+- [ ] Shadcn
+- [ ] Tanstack Query
+- [ ] Zod
 
 ## Snippets
 
@@ -217,7 +254,7 @@ export default function Page({
 }
 ```
 
-### [Route Handlers](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
+### [Route Handlers Snippets](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
 
 #### HTTP Methods
 
