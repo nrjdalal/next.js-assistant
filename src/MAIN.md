@@ -29,6 +29,54 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 
 ## Table of Contents
 
+| Snippets                                  | Description                          |
+| ----------------------------------------- | ------------------------------------ |
+| [**Directives**](#directives)             |                                      |
+| `use-cache`                               | 🔥 use cache 🔥                      |
+| `use-client`                              | 🔥 use client 🔥                     |
+| `use-server`                              | 🔥 use server 🔥                     |
+| [**Components**](#components)             |                                      |
+| [**Image**](#image)                       |                                      |
+| `import-image`                            | 🔥 Image Import 🔥                   |
+| `image`                                   | 🔥 Image 🔥                          |
+| [**Link**](#link)                         |                                      |
+| `import-link`                             | 🔥 Link Import 🔥                    |
+| `link`                                    | 🔥 Link 🔥                           |
+| `link-with-target-blank`                  | 🔥 Link with Target Blank 🔥         |
+| [**Script**](#script)                     |                                      |
+| `import-script`                           | 🔥 Script Import 🔥                  |
+| `script`                                  | 🔥 Script 🔥                         |
+| [**File Conventions**](#file-conventions) |                                      |
+| [**error.tsx**](#errortsx)                |                                      |
+| `export-error`                            | 🔥 Error 🔥                          |
+| [**layout.tsx**](#layouttsx)              |                                      |
+| `export-layout`                           | 🔥 Layout 🔥                         |
+| `export-root-layout`                      | 🔥 Root Layout 🔥                    |
+| [**page.tsx**](#pagetsx)                  |                                      |
+| `export-page`                             | 🔥 Page 🔥                           |
+| `export-page-with-params`                 | 🔥 Page with Params 🔥               |
+| `export-page-with-searchParams`           | 🔥 Page with Search Params 🔥        |
+| `export-page-with-client-params`          | 🔥 Page with Client Params 🔥        |
+| `export-page-with-client-searchParams`    | 🔥 Page with Client Search Params 🔥 |
+| [**route.ts**](#routets)                  |                                      |
+| `export-async-get`                        | 🔥 GET Request 🔥                    |
+| `export-async-post`                       | 🔥 POST Request 🔥                   |
+| `export-async-put`                        | 🔥 PUT Request 🔥                    |
+| `export-async-patch`                      | 🔥 PATCH Request 🔥                  |
+| `export-async-delete`                     | 🔥 DELETE Request 🔥                 |
+| `export-async-get-with-cookies`           | 🔥 GET Request with Cookies 🔥       |
+| `export-async-post-with-cookies`          | 🔥 POST Request with Cookies 🔥      |
+| `export-async-put-with-cookies`           | 🔥 PUT Request with Cookies 🔥       |
+| `export-async-patch-with-cookies`         | 🔥 PATCH Request with Cookies 🔥     |
+| `export-async-delete-with-cookies`        | 🔥 DELETE Request with Cookies 🔥    |
+| `export-async-get-with-headers`           | 🔥 GET Request with Headers 🔥       |
+| `export-async-post-with-headers`          | 🔥 POST Request with Headers 🔥      |
+| `export-async-put-with-headers`           | 🔥 PUT Request with Headers 🔥       |
+| `export-async-patch-with-headers`         | 🔥 PATCH Request with Headers 🔥     |
+| `export-async-delete-with-headers`        | 🔥 DELETE Request with Headers 🔥    |
+
+## Roadmap
+
 - [x] [Directives](#directives)
   - [x] [use cache](#use-cache)
   - [x] [use client](#use-client)
@@ -50,7 +98,7 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
   - [ ] middleware.tsx
   - [ ] not-found.tsx
   - [x] [page.tsx](#pagetsx)
-  - [ ] route.tsx
+  - [x] [route.ts](#routets)
   - [ ] Route Segment Config
   - [ ] template.tsx
   - [ ] unauthorized.tsx
@@ -70,7 +118,11 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 - [ ] Tanstack Query
 - [ ] Zod
 
+<!-- ~ Directives -->
+
 ### [Directives](https://nextjs.org/docs/app/api-reference/directives)
+
+<!-- ~ use cache -->
 
 #### [use cache](https://nextjs.org/docs/app/api-reference/directives/use-cache)
 
@@ -80,6 +132,8 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 "use cache"
 ```
 
+<!-- ~ use client -->
+
 #### [use client](https://nextjs.org/docs/app/api-reference/directives/use-client)
 
 ```tsx
@@ -87,6 +141,8 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 
 "use client"
 ```
+
+<!-- ~ use server -->
 
 #### [use server](https://nextjs.org/docs/app/api-reference/directives/use-server)
 
@@ -96,7 +152,11 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 "use server"
 ```
 
+<!-- ~ Components -->
+
 ### [Components](https://nextjs.org/docs/app/api-reference/components)
+
+<!-- ~ Image -->
 
 #### [Image](https://nextjs.org/docs/app/api-reference/components/image)
 
@@ -115,6 +175,8 @@ import Image from "next/image"
 
 <Image src="/nrjdalal.png" width={500} height={500} alt="Author Photo" />
 ```
+
+<!-- ~ Link -->
 
 #### [Link](https://nextjs.org/docs/app/api-reference/components/link)
 
@@ -144,6 +206,8 @@ import Link from "next/link"
 </Link>
 ```
 
+<!-- ~ Script -->
+
 #### [Script](https://nextjs.org/docs/app/api-reference/components/script)
 
 - #### Script Import
@@ -162,7 +226,11 @@ import Script from "next/script"
 <Script src="https://example.com/script.js" />
 ```
 
+<!-- ~ File Conventions -->
+
 ### [File Conventions](https://nextjs.org/docs/app/api-reference/file-conventions)
+
+<!-- ~ error.tsx -->
 
 #### [error.tsx](https://nextjs.org/docs/app/api-reference/file-conventions/error)
 
@@ -209,7 +277,9 @@ export default function Error({
 }
 ```
 
-### [layout.tsx](https://nextjs.org/docs/app/api-reference/file-conventions/layout)
+<!-- ~ layout.tsx -->
+
+#### [layout.tsx](https://nextjs.org/docs/app/api-reference/file-conventions/layout)
 
 - #### Layout
 
@@ -239,22 +309,24 @@ export default function RootLayout({
 }
 ```
 
-### [page.tsx](https://nextjs.org/docs/app/api-reference/file-conventions/page)
+<!-- ~ page.tsx -->
 
-#### Page
+#### [page.tsx](https://nextjs.org/docs/app/api-reference/file-conventions/page)
+
+- #### Page
 
 ```tsx
-// ncp - 🔥 Page 🔥 //
+// export-page - 🔥 Page 🔥 //
 
 export default function Page() {
   return <>x.com/nrjdalal_com</>
 }
 ```
 
-#### Page with Params
+- #### Page with Params
 
 ```tsx
-// ncp-with-params - 🔥 Page with Params 🔥 //
+// export-page-with-params - 🔥 Page with Params 🔥 //
 
 export default async function Page({
   params,
@@ -267,16 +339,10 @@ export default async function Page({
 }
 ```
 
-| Example Route                        | URL         | params                                |
-| ------------------------------------ | ----------- | ------------------------------------- |
-| `app/shop/[slug]/page.js`            | `/shop/1`   | Promise<{ slug: '1' }>                |
-| `app/shop/[category]/[item]/page.js` | `/shop/1/2` | Promise<{ category: '1', item: '2' }> |
-| `app/shop/[...slug]/page.js`         | `/shop/1/2` | Promise<{ slug: ['1', '2'] }>         |
-
-#### Page with Search Params
+- #### Page with Search Params
 
 ```tsx
-// ncp-with-searchParams - 🔥 Page with Search Params 🔥 //
+// export-page-with-searchParams - 🔥 Page with Search Params 🔥 //
 
 export default async function Page({
   searchParams,
@@ -289,16 +355,10 @@ export default async function Page({
 }
 ```
 
-| Example URL     | searchParams                |
-| --------------- | --------------------------- |
-| `/shop?a=1`     | Promise<{ a: '1' }>         |
-| `/shop?a=1&b=2` | Promise<{ a: '1', b: '2' }> |
-| `/shop?a=1&a=2` | Promise<{ a: ['1', '2'] }>  |
-
-#### Page with Client Params
+- #### Page with Client Params
 
 ```tsx
-// ncp-with-client-params - 🔥 Page with Client Params 🔥 //
+// export-page-with-client-params - 🔥 Page with Client Params 🔥 //
 
 "use client"
 
@@ -315,10 +375,10 @@ export default function Page({
 }
 ```
 
-#### Page with Client Search Params
+- #### Page with Client Search Params
 
 ```tsx
-// ncp-with-client-searchParams - 🔥 Page with Client Search Params 🔥 //
+// export-page-with-client-searchParams - 🔥 Page with Client Search Params 🔥 //
 
 "use client"
 
@@ -335,16 +395,12 @@ export default function Page({
 }
 ```
 
-### [Route Handlers Snippets](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
+#### [route.ts](https://nextjs.org/docs/app/api-reference/file-conventions/route)
 
-#### HTTP Methods
-
-The following HTTP methods are supported: GET, POST, PUT, PATCH, DELETE, HEAD, and OPTIONS.
-
-#### GET Request
+- #### GET
 
 ```ts
-// nrh-get - 🔥 GET Request 🔥 //
+// export-async-get - 🔥 GET Request 🔥 //
 
 export async function GET(request: Request) {
   try {
@@ -364,10 +420,10 @@ export async function GET(request: Request) {
 }
 ```
 
-#### POST Request
+- #### POST
 
 ```ts
-// nrh-post - 🔥 POST Request 🔥 //
+// export-async-post - 🔥 POST Request 🔥 //
 
 export async function POST(request: Request) {
   try {
@@ -387,10 +443,10 @@ export async function POST(request: Request) {
 }
 ```
 
-#### PUT Request
+- #### PUT
 
 ```ts
-// nrh-put - 🔥 PUT Request 🔥 //
+// export-async-put - 🔥 PUT Request 🔥 //
 
 export async function PUT(request: Request) {
   try {
@@ -410,10 +466,10 @@ export async function PUT(request: Request) {
 }
 ```
 
-#### PATCH Request
+- #### PATCH
 
 ```ts
-// nrh-patch - 🔥 PATCH Request 🔥 //
+// export-async-patch - 🔥 PATCH Request 🔥 //
 
 export async function PATCH(request: Request) {
   try {
@@ -433,10 +489,10 @@ export async function PATCH(request: Request) {
 }
 ```
 
-#### DELETE Request
+- #### DELETE
 
 ```ts
-// nrh-delete - 🔥 DELETE Request 🔥 //
+// export-async-delete - 🔥 DELETE Request 🔥 //
 
 export async function DELETE(request: Request) {
   try {
@@ -456,12 +512,10 @@ export async function DELETE(request: Request) {
 }
 ```
 
-#### HTTP Methods with Cookies
-
-#### GET Request with Cookies
+- #### GET Request with Cookies
 
 ```ts
-// nrh-get-with-cookies - 🔥 GET Request with Cookies 🔥 //
+// export-async-get-with-cookies - 🔥 GET Request with Cookies 🔥 //
 
 import { cookies } from "next/headers"
 
@@ -483,10 +537,10 @@ export async function GET(request: Request) {
 }
 ```
 
-#### POST Request with Cookies
+- #### POST Request with Cookies
 
 ```ts
-// nrh-post-with-cookies - 🔥 POST Request with Cookies 🔥 //
+// export-async-post-with-cookies - 🔥 POST Request with Cookies 🔥 //
 
 import { cookies } from "next/headers"
 
@@ -508,10 +562,10 @@ export async function POST(request: Request) {
 }
 ```
 
-#### PUT Request with Cookies
+- #### PUT Request with Cookies
 
 ```ts
-// nrh-put-with-cookies - 🔥 PUT Request with Cookies 🔥 //
+// export-async-put-with-cookies - 🔥 PUT Request with Cookies 🔥 //
 
 import { cookies } from "next/headers"
 
@@ -533,10 +587,10 @@ export async function PUT(request: Request) {
 }
 ```
 
-#### PATCH Request with Cookies
+- #### PATCH Request with Cookies
 
 ```ts
-// nrh-patch-with-cookies - 🔥 PATCH Request with Cookies 🔥 //
+// export-async-patch-with-cookies - 🔥 PATCH Request with Cookies 🔥 //
 
 import { cookies } from "next/headers"
 
@@ -558,10 +612,10 @@ export async function PATCH(request: Request) {
 }
 ```
 
-#### DELETE Request with Cookies
+- #### DELETE Request with Cookies
 
 ```ts
-// nrh-delete-with-cookies - 🔥 DELETE Request with Cookies 🔥 //
+// export-async-delete-with-cookies - 🔥 DELETE Request with Cookies 🔥 //
 
 import { cookies } from "next/headers"
 
@@ -583,12 +637,10 @@ export async function DELETE(request: Request) {
 }
 ```
 
-#### HTTP Methods with Headers
-
-#### GET Request with Headers
+- #### GET Request with Headers
 
 ```ts
-// nrh-get-with-headers - 🔥 GET Request with Headers 🔥 //
+// export-async-get-with-headers - 🔥 GET Request with Headers 🔥 //
 
 import { headers } from "next/headers"
 
@@ -610,10 +662,10 @@ export async function GET(request: Request) {
 }
 ```
 
-#### POST Request with Headers
+- #### POST Request with Headers
 
 ```ts
-// nrh-post-with-headers - 🔥 POST Request with Headers 🔥 //
+// export-async-post-with-headers - 🔥 POST Request with Headers 🔥 //
 
 import { headers } from "next/headers"
 
@@ -635,10 +687,10 @@ export async function POST(request: Request) {
 }
 ```
 
-#### PUT Request with Headers
+- #### PUT Request with Headers
 
 ```ts
-// nrh-put-with-headers - 🔥 PUT Request with Headers 🔥 //
+// export-async-put-with-headers - 🔥 PUT Request with Headers 🔥 //
 
 import { headers } from "next/headers"
 
@@ -660,10 +712,10 @@ export async function PUT(request: Request) {
 }
 ```
 
-#### PATCH Request with Headers
+- #### PATCH Request with Headers
 
 ```ts
-// nrh-patch-with-headers - 🔥 PATCH Request with Headers 🔥 //
+// export-async-patch-with-headers - 🔥 PATCH Request with Headers 🔥 //
 
 import { headers } from "next/headers"
 
@@ -685,10 +737,10 @@ export async function PATCH(request: Request) {
 }
 ```
 
-#### DELETE Request with Headers
+- #### DELETE Request with Headers
 
 ```ts
-// nrh-delete-with-headers - 🔥 DELETE Request with Headers 🔥 //
+// export-async-delete-with-headers - 🔥 DELETE Request with Headers 🔥 //
 
 import { headers } from "next/headers"
 
