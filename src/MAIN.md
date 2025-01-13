@@ -43,9 +43,8 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
     - [Use Server](#use-server)
   - [Components Snippets](#components)
     - [Link](#link)
-      - [Link Import](#link-import)
-      - [Link Component](#link-component)
-      - [Link Component with Target Blank](#link-component-with-target-blank)
+    - [Image](#image)
+    - [Script](#script)
   - [Page Snippets](#page-snippets)
     - [Page](#page)
     - [Page with Params](#page-with-params)
@@ -66,9 +65,9 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 - [ ] Components
   - [ ] Font
   - [ ] Form
-  - [ ] Image
+  - [x] Image
   - [x] Link
-  - [ ] Script
+  - [x] Script
 - [ ] File Conventions
   - [ ] default.js
   - [ ] error.js
@@ -178,10 +177,20 @@ import Image from "next/image"
 
 #### Script
 
+- #### Script Import
+
 ```tsx
 // import-script - 🔥 Script Import 🔥 //
 
 import Script from "next/script"
+```
+
+- #### Script Component
+
+```tsx
+// script - 🔥 Script 🔥 //
+
+<Script src="https://example.com/script.js" />
 ```
 
 ### [Page Snippets](https://nextjs.org/docs/app/api-reference/file-conventions/page)
