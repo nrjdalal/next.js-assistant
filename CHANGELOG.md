@@ -1,5 +1,13 @@
 # Change Log
 
+## 0.15.0
+
+### Minor Changes
+
+- [`56110fd`](https://github.com/nrjdalal/next.js-assistant/commit/56110fd1da56d97c44b1323b687b85f64d3bb07a) Thanks [@nrjdalal](https://github.com/nrjdalal)! - added route handler
+
+- [`1cf5f2c`](https://github.com/nrjdalal/next.js-assistant/commit/1cf5f2cbba5bfb4dc0422f6d77873862ee03b1ca) Thanks [@nrjdalal](https://github.com/nrjdalal)! - added route handlers
+
 ## 0.14.1
 
 ### Patch Changes
