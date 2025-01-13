@@ -1,5 +1,17 @@
 # Change Log
 
+## 0.21.1
+
+### Patch Changes
+
+- [`4872464`](https://github.com/nrjdalal/next.js-assistant/commit/48724647532ccfb1de1b58ccdd518bdeb6c05f0b) Thanks [@nrjdalal](https://github.com/nrjdalal)! - more imports
+
+- [`2dcd724`](https://github.com/nrjdalal/next.js-assistant/commit/2dcd7240758c90923f836599dcfde95d1ea10f17) Thanks [@nrjdalal](https://github.com/nrjdalal)! - more imports
+
+- [`4880b05`](https://github.com/nrjdalal/next.js-assistant/commit/4880b0514e9a7703d54f5b3fa037c6f21bad48b4) Thanks [@nrjdalal](https://github.com/nrjdalal)! - more imports
+
+- [`07311d2`](https://github.com/nrjdalal/next.js-assistant/commit/07311d28ff03b05ed6e1d801f08f7415adcbffde) Thanks [@nrjdalal](https://github.com/nrjdalal)! - more imports
+
 ## 0.21.0
 
 ### Minor Changes
