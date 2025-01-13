@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.18.0
+
+### Minor Changes
+
+- [`64fe534`](https://github.com/nrjdalal/next.js-assistant/commit/64fe5346658c36b82b8595328a83da6e4fa596cb) Thanks [@nrjdalal](https://github.com/nrjdalal)! - fix double readme
+
 ## 0.17.0
 
 ### Minor Changes
