@@ -10,6 +10,8 @@ Build for Production. Designed for Developers.
 
 ## What's New?
 
+- [x] Directives
+- [x] Components
 - [x] Page Snippets
 - [x] (Latest)Route Handlers Snippets with Error Handling
 
@@ -41,6 +43,15 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 - [Getting Started](#getting-started)
 - [Table of Contents](#table-of-contents)
 - [Snippets](#snippets)
+  - [Directives](#directives)
+    - [Use Cache](#use-cache)
+    - [Use Client](#use-client)
+    - [Use Server](#use-server)
+  - [Components](#components)
+    - [Link](#link)
+      - [Link Import](#link-import)
+      - [Link Component](#link-component)
+      - [Link Component with Target Blank](#link-component-with-target-blank)
   - [Page Snippets](#page-snippets)
     - [Page](#page)
     - [Page with Params](#page-with-params)
@@ -53,6 +64,62 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
     - [HTTP Methods with Headers](#http-methods-with-headers)
 
 ## Snippets
+
+### [Directives Snippets](https://nextjs.org/docs/app/api-reference/directives)
+
+#### Use Cache
+
+```tsx
+// use-cache - 🔥 use cache 🔥 //
+
+"use cache"
+```
+
+#### Use Client
+
+```tsx
+// use-client - 🔥 use client 🔥 //
+
+"use client"
+```
+
+#### Use Server
+
+```tsx
+// use-server - 🔥 use server 🔥 //
+
+"use server"
+```
+
+### [Components Snippets](https://nextjs.org/docs/app/api-reference/components)
+
+#### Link
+
+- #### Link Import
+
+```tsx
+// ilink - 🔥 Link Import 🔥 //
+
+import Link from "next/link"
+```
+
+- #### Link Component
+
+```tsx
+// link - 🔥 Link 🔥 //
+
+<Link href="___/___">__Home__</Link>
+```
+
+- #### Link Component with Target Blank
+
+```tsx
+// link-target-blank - 🔥 Link with Target Blank 🔥 //
+
+<Link href="___/___" target="_blank">
+  __Home__
+</Link>
+```
 
 ### [Page Snippets](https://nextjs.org/docs/app/api-reference/file-conventions/page)
 
