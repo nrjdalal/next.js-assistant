@@ -1,5 +1,15 @@
 # Change Log
 
+## 0.21.0
+
+### Minor Changes
+
+- [`e0e0903`](https://github.com/nrjdalal/next.js-assistant/commit/e0e09036f70d061287b9c23d57945a3be57b0da4) Thanks [@nrjdalal](https://github.com/nrjdalal)! - updated roadmap
+
+### Patch Changes
+
+- [`af8c177`](https://github.com/nrjdalal/next.js-assistant/commit/af8c1771bbc5305e7dfb65ecc284a6fc91586eaa) Thanks [@nrjdalal](https://github.com/nrjdalal)! - update package script
+
 ## 0.20.0
 
 ### Minor Changes
