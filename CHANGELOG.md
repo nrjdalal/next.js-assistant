@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.16.0
+
+### Minor Changes
+
+- [`d536d3e`](https://github.com/nrjdalal/next.js-assistant/commit/d536d3ef7ef22fcb33e49c0d9062b2768da9bc6e) Thanks [@nrjdalal](https://github.com/nrjdalal)! - test cursor position
+
 ## 0.15.0
 
 ### Minor Changes
