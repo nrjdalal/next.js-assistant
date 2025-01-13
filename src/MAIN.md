@@ -135,7 +135,7 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 - #### Link Import
 
 ```tsx
-// import-link-from-next-link - 🔥 Link Import 🔥 //
+// import-link - 🔥 Link Import 🔥 //
 
 import Link from "next/link"
 ```
@@ -156,6 +156,22 @@ import Link from "next/link"
 <Link href="___/___" target="_blank">
   __Home__
 </Link>
+```
+
+#### Image
+
+```tsx
+// import-image - 🔥 Image Import 🔥 //
+
+import Image from "next/image"
+```
+
+#### Script
+
+```tsx
+// import-script - 🔥 Script Import 🔥 //
+
+import Script from "next/script"
 ```
 
 ### [Page Snippets](https://nextjs.org/docs/app/api-reference/file-conventions/page)
