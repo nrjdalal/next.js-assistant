@@ -71,3 +71,25 @@ fs.readFile(readmePath, "utf8", (err, data) => {
     processSnippets(data, config.regex, config.filePath)
   })
 })
+
+// copy README.md to .github/README.md with replacements
+const readmeGithubPath = path.join(__dirname, ".github/README.md")
+
+fs.readFile(readmePath, "utf8", (err, data) => {
+  if (err) {
+    console.error("Error reading README.md:", err)
+    return
+  }
+
+  const readmeGithub = data
+    .replace(/___([^_]+)___/g, "$1")
+    .replace(/__([^_]+)__/g, "$1")
+
+  fs.writeFile(readmeGithubPath, readmeGithub, (err) => {
+    if (err) {
+      console.error(`Error writing to ${readmeGithubPath}:`, err)
+    } else {
+      console.log(`README.md successfully written to ${readmeGithubPath}`)
+    }
+  })
+})

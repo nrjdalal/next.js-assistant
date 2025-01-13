@@ -43,11 +43,11 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 - [Getting Started](#getting-started)
 - [Table of Contents](#table-of-contents)
 - [Snippets](#snippets)
-  - [Directives Snippets](#directives)
+  - [Directives](#directives)
     - [Use Cache](#use-cache)
     - [Use Client](#use-client)
     - [Use Server](#use-server)
-  - [Components Snippets](#components)
+  - [Components](#components)
     - [Link](#link)
       - [Link Import](#link-import)
       - [Link Component](#link-component)
@@ -108,7 +108,7 @@ import Link from "next/link"
 ```tsx
 // link - 🔥 Link 🔥 //
 
-<Link href="___/___">__Home__</Link>
+<Link href="/">Home</Link>
 ```
 
 - #### Link Component with Target Blank
@@ -116,8 +116,8 @@ import Link from "next/link"
 ```tsx
 // link-target-blank - 🔥 Link with Target Blank 🔥 //
 
-<Link href="___/___" target="_blank">
-  __Home__
+<Link href="/" target="_blank">
+  Home
 </Link>
 ```
 
