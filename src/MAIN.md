@@ -74,6 +74,9 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 | `export-async-put-with-headers`           | 🔥 PUT Request with Headers 🔥       |
 | `export-async-patch-with-headers`         | 🔥 PATCH Request with Headers 🔥     |
 | `export-async-delete-with-headers`        | 🔥 DELETE Request with Headers 🔥    |
+| [**Drizzle**](#drizzle)                   |                                      |
+| `drizzle-config`                          | 🔥 Drizzle Config 🔥                 |
+| `drizzle-schema`                          | 🔥 Drizzle Schema 🔥                 |
 
 ## Roadmap
 
