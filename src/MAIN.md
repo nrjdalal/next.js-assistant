@@ -135,7 +135,7 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 - #### Link Import
 
 ```tsx
-// ilink - 🔥 Link Import 🔥 //
+// import-link-from-next-link - 🔥 Link Import 🔥 //
 
 import Link from "next/link"
 ```
