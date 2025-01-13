@@ -173,7 +173,7 @@ import Image from "next/image"
 ```tsx
 // image - 🔥 Image 🔥 //
 
-<Image src="/nrjdalal.png" width={500} height={500} alt="Author Image" />
+<Image src="/nrjdalal.png" width={500} height={500} alt="Author Photo" />
 ```
 
 #### Script
