@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.17.0
+
+### Minor Changes
+
+- [`d9dc18c`](https://github.com/nrjdalal/next.js-assistant/commit/d9dc18ca2e76ff41b664f6c4ff2722db935bbe7d) Thanks [@nrjdalal](https://github.com/nrjdalal)! - added error handling, cookies and headers for route handlers
+
 ## 0.16.0
 
 ### Minor Changes
