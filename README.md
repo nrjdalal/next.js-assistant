@@ -160,10 +160,20 @@ import Link from "next/link"
 
 #### Image
 
+- #### Image Import
+
 ```tsx
 // import-image - 🔥 Image Import 🔥 //
 
 import Image from "next/image"
+```
+
+- #### Image Component
+
+```tsx
+// image - 🔥 Image 🔥 //
+
+<Image src="/nrjdalal.png" width={500} height={500} alt="Author Image" />
 ```
 
 #### Script

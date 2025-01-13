@@ -17,7 +17,7 @@
     "publish:latest": "bun run generate && changeset publish && vsce publish"
   },
   "simple-git-hooks": {
-    "pre-commit": "npm run generate",
+    "pre-commit": "npm run generate && npx lint-staged --verbose",
     "commit-msg": "npx commitlint --edit $1"
   },
   "repository": "nrjdalal/next.js-assistant",
@@ -43,6 +43,7 @@
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@vscode/vsce": "^3.2.1",
+    "lint-staged": "^15.3.0",
     "prettier": "^3.4.2",
     "simple-git-hooks": "^2.11.1"
   },
