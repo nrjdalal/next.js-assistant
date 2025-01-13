@@ -35,7 +35,7 @@ const extractSnippets = (data, regex) => {
     const restOfSnippet = lines.join("\n").trim()
     snippets[snippet.name] = {
       prefix: snippet.prefix,
-      body: restOfSnippet.split("\n"),
+      body: restOfSnippet.replaceAll("// $", "$").split("\n"),
     }
   }
   return snippets
