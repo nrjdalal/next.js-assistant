@@ -168,6 +168,16 @@ import Link from "next/link"
 import Image from "next/image"
 ```
 
+#### Script
+
+- #### Script Import
+
+```tsx
+// import-script - 🔥 Script Import 🔥 //
+
+import Script from "next/script"
+```
+
 ### [Page Snippets](https://nextjs.org/docs/app/api-reference/file-conventions/page)
 
 #### Page
