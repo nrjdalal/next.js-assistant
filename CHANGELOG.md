@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.19.0
+
+### Minor Changes
+
+- [`8f0f64e`](https://github.com/nrjdalal/next.js-assistant/commit/8f0f64e8c5d37fd5d14d9e87c70e1c98804cb0ee) Thanks [@nrjdalal](https://github.com/nrjdalal)! - added directives and components
+
 ## 0.18.0
 
 ### Minor Changes
