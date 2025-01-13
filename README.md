@@ -108,7 +108,7 @@ import Link from "next/link"
 ```tsx
 // link - 🔥 Link 🔥 //
 
-<Link href="___/___">__Home__</Link>
+<Link href="/">Home</Link>
 ```
 
 - #### Link Component with Target Blank
@@ -116,8 +116,8 @@ import Link from "next/link"
 ```tsx
 // link-target-blank - 🔥 Link with Target Blank 🔥 //
 
-<Link href="___/___" target="_blank">
-  __Home__
+<Link href="/" target="_blank">
+  Home
 </Link>
 ```
 

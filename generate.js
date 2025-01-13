@@ -1,9 +1,7 @@
-// Snippets are generated from the README.md file only.
-
 import fs from "fs"
 import path from "path"
 
-const readmePath = path.join(__dirname, "README.md")
+const srcPath = path.join(__dirname, "src/MAIN.md")
 
 const snippetConfigs = [
   {
@@ -61,9 +59,9 @@ const processSnippets = (data, regex, filePath) => {
   writeSnippetsToFile(filePath, snippets)
 }
 
-fs.readFile(readmePath, "utf8", (err, data) => {
+fs.readFile(srcPath, "utf8", (err, data) => {
   if (err) {
-    console.error("Error reading README.md:", err)
+    console.error("Error reading MAIN.md:", err)
     return
   }
 
@@ -72,10 +70,9 @@ fs.readFile(readmePath, "utf8", (err, data) => {
   })
 })
 
-// copy README.md to .github/README.md with replacements
-const readmeGithubPath = path.join(__dirname, ".github/README.md")
+const readmeGithubPath = path.join(__dirname, "README.md")
 
-fs.readFile(readmePath, "utf8", (err, data) => {
+fs.readFile(srcPath, "utf8", (err, data) => {
   if (err) {
     console.error("Error reading README.md:", err)
     return

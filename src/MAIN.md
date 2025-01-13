@@ -28,7 +28,7 @@ Welcome to the Next.js Assistant, your ultimate resource for Next.js development
 
 > This is a contribution first project. Therefore I made it as easy as possible to contribute.
 
-We welcome contributions from everyone. Adding snippets to this project is straightforward—just edit the `README.md` file. There is no `/src` or `/dist` or any code to worry about. Simply add amazing snippets to the relevant section and submit a pull request.
+We welcome contributions from everyone. Adding snippets to this project is straightforward—just edit the `MAIN.md` file. Simply add amazing snippets to the relevant section and submit a pull request.
 
 ## Getting Started
 
@@ -43,11 +43,11 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 - [Getting Started](#getting-started)
 - [Table of Contents](#table-of-contents)
 - [Snippets](#snippets)
-  - [Directives](#directives)
+  - [Directives Snippets](#directives)
     - [Use Cache](#use-cache)
     - [Use Client](#use-client)
     - [Use Server](#use-server)
-  - [Components](#components)
+  - [Components Snippets](#components)
     - [Link](#link)
       - [Link Import](#link-import)
       - [Link Component](#link-component)
@@ -108,7 +108,7 @@ import Link from "next/link"
 ```tsx
 // link - 🔥 Link 🔥 //
 
-<Link href="/">Home</Link>
+<Link href="___/___">__Home__</Link>
 ```
 
 - #### Link Component with Target Blank
@@ -116,8 +116,8 @@ import Link from "next/link"
 ```tsx
 // link-target-blank - 🔥 Link with Target Blank 🔥 //
 
-<Link href="/" target="_blank">
-  Home
+<Link href="___/___" target="_blank">
+  __Home__
 </Link>
 ```
 

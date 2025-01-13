@@ -12,7 +12,7 @@
     "email": "admin@nrjdalal.com"
   },
   "scripts": {
-    "generate": "rm -rf ./dist/ && bun generate.js && cp ./assets/* ./dist/ && bunx prettier --write ./dist/*.code-snippets",
+    "generate": "rm -rf ./dist/ && bun generate.js && cp ./assets/* ./dist/ && bunx prettier --write README.md ./dist/*.code-snippets",
     "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then simple-git-hooks; fi",
     "publish:latest": "bun run generate && changeset publish && vsce publish"
   },
