@@ -1,5 +1,17 @@
 # Change Log
 
+## 0.23.0
+
+### Minor Changes
+
+- [`0951caf`](https://github.com/nrjdalal/next.js-assistant/commit/0951caf749f8f3dc788877bf48b56cb27ce9d650) Thanks [@nrjdalal](https://github.com/nrjdalal)! - pro readme
+
+### Patch Changes
+
+- [`1e29049`](https://github.com/nrjdalal/next.js-assistant/commit/1e29049011c3b394b5ccee6704344887ee65e34b) Thanks [@nrjdalal](https://github.com/nrjdalal)! - updated docs
+
+- [`4a82942`](https://github.com/nrjdalal/next.js-assistant/commit/4a82942ba773052bcc13a983dbf52e30be327696) Thanks [@nrjdalal](https://github.com/nrjdalal)! - better toc
+
 ## 0.22.1
 
 ### Patch Changes
