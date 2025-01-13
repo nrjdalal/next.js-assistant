@@ -1,5 +1,19 @@
 # Change Log
 
+## 0.24.0
+
+### Minor Changes
+
+- [`ed38fbd`](https://github.com/nrjdalal/next.js-assistant/commit/ed38fbd70c7eca581f269f15195316f161f45f54) Thanks [@nrjdalal](https://github.com/nrjdalal)! - added drizzle
+
+- [`6bfa014`](https://github.com/nrjdalal/next.js-assistant/commit/6bfa0145d278d48af384eeb91741f597afdff103) Thanks [@nrjdalal](https://github.com/nrjdalal)! - added drizzle
+
+### Patch Changes
+
+- [`a348486`](https://github.com/nrjdalal/next.js-assistant/commit/a348486b69c2dd2901d04e5ea68d6fedab46197e) Thanks [@nrjdalal](https://github.com/nrjdalal)! - typo correction
+
+- [`0e46363`](https://github.com/nrjdalal/next.js-assistant/commit/0e463638b6dd802ef3873d6e8580e3e9ec33f562) Thanks [@nrjdalal](https://github.com/nrjdalal)! - updated docs
+
 ## 0.23.0
 
 ### Minor Changes
