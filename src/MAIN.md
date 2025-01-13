@@ -33,27 +33,27 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
   - [x] [use cache](#use-cache)
   - [x] [use client](#use-client)
   - [x] [use server](#use-server)
-- [x] [Components](#components)
-  - [ ] Font (Future)
-  - [ ] Form (Future)
+- [ ] [Components](#components)
+  - [ ] Font
+  - [ ] Form
   - [x] [Image](#image)
   - [x] [Link](#link)
   - [x] [Script](#script)
 - [ ] File Conventions
-  - [ ] default.js (Future)
-  - [x] [error.js](#error)
-  - [ ] forbidden.js
-  - [ ] instrumentation.js
-  - [ ] layout.js
-  - [ ] loading.js
-  - [ ] mdx-components.js
-  - [ ] middleware.js
-  - [ ] not-found.js
-  - [ ] page.js
-  - [ ] route.js
+  - [ ] default.tsx
+  - [x] [error.tsx](#errortsx)
+  - [ ] forbidden.tsx
+  - [ ] instrumentation.tsx
+  - [ ] [layout.tsx](#layouttsx)
+  - [ ] loading.tsx
+  - [ ] mdx-components.tsx
+  - [ ] middleware.tsx
+  - [ ] not-found.tsx
+  - [x] [page.tsx](#pagetsx)
+  - [ ] route.tsx
   - [ ] Route Segment Config
-  - [ ] template.js
-  - [ ] unauthorized.js
+  - [ ] template.tsx
+  - [ ] unauthorized.tsx
   - [ ] Metadata Files
 - [ ] Functions (0/36)
 - [ ] Configuration
@@ -164,7 +164,7 @@ import Script from "next/script"
 
 ### [File Conventions](https://nextjs.org/docs/app/api-reference/file-conventions)
 
-#### [Error](https://nextjs.org/docs/app/api-reference/file-conventions/error)
+#### [error.tsx](https://nextjs.org/docs/app/api-reference/file-conventions/error)
 
 ```tsx
 // export-error - 🔥 Error 🔥 //
@@ -209,7 +209,37 @@ export default function Error({
 }
 ```
 
-### [Page Snippets](https://nextjs.org/docs/app/api-reference/file-conventions/page)
+### [layout.tsx](https://nextjs.org/docs/app/api-reference/file-conventions/layout)
+
+- #### Layout
+
+```tsx
+// export-layout - 🔥 Layout 🔥 //
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>
+}
+```
+
+- #### Root Layout
+
+```tsx
+// export-root-layout - 🔥 Root Layout 🔥 //
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  )
+}
+```
+
+### [page.tsx](https://nextjs.org/docs/app/api-reference/file-conventions/page)
 
 #### Page
 
