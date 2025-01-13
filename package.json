@@ -17,6 +17,7 @@
     "publish:latest": "bun run generate && changeset publish && vsce publish"
   },
   "simple-git-hooks": {
+    "pre-commit": "npm run generate",
     "commit-msg": "npx commitlint --edit $1"
   },
   "repository": "nrjdalal/next.js-assistant",
