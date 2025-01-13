@@ -1,5 +1,15 @@
 # Change Log
 
+## 0.20.0
+
+### Minor Changes
+
+- [`cffc3d3`](https://github.com/nrjdalal/next.js-assistant/commit/cffc3d399bd17ef7eb867115bfec136dfe59473a) Thanks [@nrjdalal](https://github.com/nrjdalal)! - change way to cuntribute
+
+### Patch Changes
+
+- [`528ada7`](https://github.com/nrjdalal/next.js-assistant/commit/528ada74abb7b95913e382b6425df7dd90ab2f80) Thanks [@nrjdalal](https://github.com/nrjdalal)! - checking readme priority
+
 ## 0.19.0
 
 ### Minor Changes
