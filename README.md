@@ -74,6 +74,8 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
 | `export-async-put-with-headers`           | 🔥 PUT Request with Headers 🔥       |
 | `export-async-patch-with-headers`         | 🔥 PATCH Request with Headers 🔥     |
 | `export-async-delete-with-headers`        | 🔥 DELETE Request with Headers 🔥    |
+| [**Configuration**](#configuration)       |                                      |
+| `next-config-ts`                          | 🔥 Next Config 🔥                    |
 | [**Drizzle**](#drizzle)                   |                                      |
 | `drizzle-config`                          | 🔥 Drizzle Config 🔥                 |
 | `drizzle-schema`                          | 🔥 Drizzle Schema 🔥                 |
@@ -84,9 +86,9 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
   - [x] [use cache](#use-cache)
   - [x] [use client](#use-client)
   - [x] [use server](#use-server)
-- [ ] [Components](#components)
-  - [ ] Font
-  - [ ] Form
+- [x] [Components](#components)
+  - [-] Font
+  - [-] Form
   - [x] [Image](#image)
   - [x] [Link](#link)
   - [x] [Script](#script)
@@ -107,10 +109,10 @@ To begin, simply install the extension from the Visual Studio Code Marketplace. 
   - [ ] unauthorized.tsx
   - [ ] Metadata Files
 - [ ] Functions (0/36)
-- [ ] Configuration
-  - [ ] next.config.js
-  - [ ] TypeScript
-  - [ ] ESLint
+- [x] Configuration
+  - [x] next.config.js
+  - [-] TypeScript
+  - [-] ESLint
 
 ## Roadmap Extras
 
@@ -397,6 +399,8 @@ export default function Page({
   return <>{query}</>
 }
 ```
+
+<!-- ~ route.ts -->
 
 #### [route.ts](https://nextjs.org/docs/app/api-reference/file-conventions/route)
 
@@ -765,7 +769,27 @@ export async function DELETE(request: Request) {
 }
 ```
 
-#### Drizzle
+<!-- ~ Configuration -->
+
+### [Configuration](https://nextjs.org/docs/app/api-reference/config)
+
+- #### [next.config.ts](https://nextjs.org/docs/app/api-reference/config/next-config-js)
+
+```ts
+// next-config-ts - 🔥 Next Config 🔥 //
+
+import type { NextConfig } from "next"
+
+const nextConfig: NextConfig = {
+  /* config options here */
+}
+
+export default nextConfig
+```
+
+<!-- ~ Drizzle -->
+
+### Drizzle
 
 - #### Drizzle Config
 
