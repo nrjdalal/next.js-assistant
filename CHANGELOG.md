@@ -1,5 +1,13 @@
 # Change Log
 
+## 0.21.2
+
+### Patch Changes
+
+- [`8021f07`](https://github.com/nrjdalal/next.js-assistant/commit/8021f0787f9fdd84af633281a9adc8c616aaa1a3) Thanks [@nrjdalal](https://github.com/nrjdalal)! - improve scripts
+
+- [`8456d7c`](https://github.com/nrjdalal/next.js-assistant/commit/8456d7caacb2a72012a4eca539ec475856bb0dfe) Thanks [@nrjdalal](https://github.com/nrjdalal)! - updated scripts
+
 ## 0.21.1
 
 ### Patch Changes
